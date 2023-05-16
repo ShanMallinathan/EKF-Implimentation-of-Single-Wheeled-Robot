@@ -1,0 +1,9 @@
+%Function to compute measurement noise matrix
+function [Meas_Noise] = R
+
+Meas_Noise = [sigma_r, 0;
+              0,    0.25;];
+Meas_Noise = diag[(0.01, 0.2)]
+
+end
+
